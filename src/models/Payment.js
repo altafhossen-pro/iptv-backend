@@ -33,7 +33,7 @@ const paymentSchema = new mongoose.Schema({
     },
     payment_method: {
         type: String,
-        enum: ['bkash', 'nagad', 'rocket', 'card'],
+        enum: ['bkash', 'nagad', 'rocket', 'card','manual'],
         required: [true, 'Payment method is required']
     },
     payment_status: {

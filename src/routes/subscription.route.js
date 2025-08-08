@@ -10,6 +10,8 @@ router.post('/subscribe', verifyToken, subscriptionController.subscribeToPlan);
 router.post('/cancel', verifyToken, subscriptionController.cancelSubscription);
 router.post('/renew', verifyToken, subscriptionController.renewSubscription);
 
+router.post('/manual-payment', verifyToken, subscriptionController.manualPayment);
+
 // Admin routes (protected + admin access required)
 router.get('/all', verifyToken, subscriptionController.getAllSubscriptions);
 router.get('/:subscriptionId', verifyToken, subscriptionController.getSubscriptionById);

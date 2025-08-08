@@ -3,6 +3,7 @@ const Subscription = require('../models/Subscription');
 const Payment = require('../models/Payment');
 const User = require('../models/User');
 const sendResponse = require('../utils/sendResponse');
+const ManualPayment = require('../models/ManualPayment');
 
 // Get current user's subscription
 exports.getUserSubscription = async (req, res) => {
@@ -849,10 +850,10 @@ exports.getSubscriptionStats = async (req, res) => {
     try {
         // Get total subscriptions
         const totalSubscriptions = await Subscription.countDocuments();
-        
+
         // Get active subscriptions
         const activeSubscriptions = await Subscription.countDocuments({ status: 'active' });
-        
+
         // Get subscriptions by type
         const subscriptionsByType = await Subscription.aggregate([
             {
@@ -1063,5 +1064,35 @@ exports.updateSubscriptionStatus = async (req, res) => {
         });
     }
 };
+
+exports.manualPayment = async (req, res) => {
+    try {
+        const data = req.body;
+        const userId = req.user.userId;
+        const newData = {
+            ...data,
+            user_id: userId,
+            payment_method: 'manual',
+            payment_status: 'pending',
+        };
+        const newManualPayment = await ManualPayment.create(newData);
+        return sendResponse({
+            res,
+            statusCode: 201,
+            success: true,
+            message: 'Manual payment created successfully',
+            data: newManualPayment
+        });
+
+    } catch (error) {
+        console.error('Manual payment error:', error);
+        return sendResponse({
+            res,
+            statusCode: 500,
+            success: false,
+            message: 'Server error while creating manual payment'
+        });
+    }
+}
 
 module.exports = exports;
