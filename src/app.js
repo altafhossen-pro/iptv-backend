@@ -12,7 +12,7 @@ const app = express();
 const allowedOrigins = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
-    'https://monowartv.netlify.app'
+    'https://iptv-bd.netlify.app'
 ];
 
 app.use((req, res, next) => {
