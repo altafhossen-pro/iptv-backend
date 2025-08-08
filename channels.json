@@ -1,0 +1,445 @@
+{
+    "channels": {
+        
+        "sports": [
+            {
+                "name": "ESPN",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
+                "url": "https://5nhp186eg31fofnc.chinese-restaurant-api.site/v3/director/VE1NTkzNGQyNjA3OWRiLWU1NGEtYmZjNC05NDMxLWU4OTEyYmJm/master.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Star Sports 1 Hindi",
+                "logo": "https://i.postimg.cc/8cYLb3kY/Star-Sports-1-HD.jpg",
+                "url": "https://ddy6new.newkso.ru/ddy6/premium268/mono.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Star Sports 2 HD",
+                "logo": "https://i.postimg.cc/3NGbmgY2/Star-Sports-2.jpg",
+                "url": "http://nayatv.ydns.eu:80/xfireflix/flixfire/11677.ts",
+                "category": "Sports"
+            },
+            {
+                "name": "Star Sports 3",
+                "logo": "https://i.postimg.cc/ryHX6q6V/Star-Sports-3.jpg",
+                "url": "http://nayatv.ydns.eu:80/xfireflix/flixfire/11682.ts",
+                "category": "Sports"
+            },
+            {
+                "name": "Star Sports Select 1 HD",
+                "logo": "https://i.ibb.co.com/q3rN5Jmp/Star-Sports-Select-1-HD.jpg",
+                "url": "http://nayatv.ydns.eu:80/xfireflix/flixfire/11678.ts",
+                "category": "Sports"
+            },
+            {
+                "name": "DD Sports",
+                "logo": "https://i.postimg.cc/7hVCMDyZ/dd-sports.jpg",
+                "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index_3.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Ten Sports HD",
+                "logo": "https://i.postimg.cc/x1VYmp0L/Ten-Sports.jpg",
+                "url": "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/chunklist_b996000.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Sony Sports 1 HD",
+                "logo": "https://i.postimg.cc/m2sv0bW0/Sony-Sports-1-HD.jpg",
+                "url": "https://tataplay.slivcdn.com//hls/live/2011747/TEN1HD/master.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Sony Sports 2 HD",
+                "logo": "https://i.postimg.cc/v8rY12Yw/Sony-Sports-2-HD.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2020434/TEN2HD/master.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Sony Sports 3 HD",
+                "logo": "https://i.postimg.cc/3xXCW92d/Sony-Sports-3-HD.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2020591/TEN3HD/master.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Sony Sports 4 HD",
+                "logo": "https://i.postimg.cc/7YH1WSzz/Sony-Sports-4-HD.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2020589/ten4hd/master.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Sony Sports 5 HD",
+                "logo": "https://i.ibb.co.com/8gykwqxf/Sony-Sports-5-HD.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2020593/SONYSIXHD/master.m3u8",
+                "category": "Sports"
+            },
+            {
+                "name": "Sky Sports Cricket",
+                "logo": "https://i.postimg.cc/g0XYC8FP/Sky-Sports-Cricket.jpg",
+                "url": "https://crichdplaylist.extratvteam.workers.dev/master.m3u8?cid=skyscric",
+                "category": "Sports"
+            }
+        ],
+        "bangladesh": [
+            
+            {
+                "name": "Gazi TV",
+                "logo": "https://i.ibb.co/pQGXzMP/images-1-removebg-preview.png",
+                "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/tracks-v1a1/mono.ts.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Ananda TV",
+                "logo": "https://i.ibb.co.com/zhpfnXry/Ananda-TV.jpg",
+                "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/anandatv.stream/playlist.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Asian TV",
+                "logo": "https://i.postimg.cc/D04SQBVt/Asian-TV.jpg",
+                "url": "https://tvsen6.aynaott.com/asiantv/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "ATN Bangla",
+                "logo": "https://i.ibb.co/F41Zgxyr/ATN-Bangla.jpg",
+                "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbd-8-org.stream/playlist.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "ATN News",
+                "logo": "https://i.postimg.cc/PxyNJrGm/ATN-News.jpg",
+                "url": "https://tvsen6.aynaott.com/atnnews/tracks-v1a1/mono.ts.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Bijoy TV",
+                "logo": "https://i.postimg.cc/1tnFM9wC/Bijoy-TV.jpg",
+                "url": "https://tvsen6.aynaott.com/bijoytv/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Bangla TV",
+                "logo": "https://i.postimg.cc/qqXGm6D1/Bangla-TV.jpg",
+                "url": "https://tvsen6.aynaott.com/banglatv/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Boishakhi TV",
+                "logo": "https://i.postimg.cc/vBW8D5m8/Boiskakhi.jpg",
+                "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/boishakhitv-org.stream/playlist.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "BTV",
+                "logo": "https://i.postimg.cc/cJHPmjNJ/BTV.jpg",
+                "url": "http://103.230.105.252:1935/live/btv/manifest.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "BTV News HD",
+                "logo": "https://i.postimg.cc/Qx21w3kr/btv-news.jpg",
+                "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/btvbd-office-sg.stream/playlist.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Channel I",
+                "logo": "https://i.postimg.cc/tJq1jBzG/Channel-i.jpg",
+                "url": "https://tvsen6.aynaott.com/channeli/tracks-v1a1/mono.ts.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Channel 24",
+                "logo": "https://i.postimg.cc/C1CCfh6n/Channel-24.jpg",
+                "url": "https://tvsen6.aynaott.com/channel24/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "DBC News",
+                "logo": "https://i.postimg.cc/BQzrR9JZ/DBC-News.jpg",
+                "url": "https://tvsen6.aynaott.com/dbcnews/tracks-v1a1/mono.ts.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Deepto TV",
+                "logo": "https://i.postimg.cc/L6WP5g60/Deepto-TV.jpg",
+                "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Desh TV",
+                "logo": "https://i.postimg.cc/wvBbd56q/Desh-TV.jpg",
+                "url": "https://tvsen6.aynaott.com/deshtv/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Ekattor TV",
+                "logo": "https://i.postimg.cc/JzDLh7pB/Ekattor.jpg",
+                "url": "https://tvsen6.aynaott.com/ekattorbdtv/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Jamuna TV",
+                "logo": "https://i.postimg.cc/63K8YKmD/Jamuna-TV.jpg",
+                "url": "https://tvsen6.aynaott.com/jamunatv/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Maasranga TV",
+                "logo": "https://i.postimg.cc/4NVxpW6t/Maasranga.jpg",
+                "url": "https://tvsen5.aynaott.com/tK2BNvT68fHZ/tracks-v1a1/mono.ts.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "News 24 HD",
+                "logo": "https://i.ibb.co.com/5gCvWJv6/News-24-HD.jpg",
+                "url": "https://tvsen6.aynaott.com/news24/index.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "RTV",
+                "logo": "https://i.postimg.cc/Qdr7mnkW/RTV.jpg",
+                "url": "https://tvsen6.aynaott.com/rtv/tracks-v1a1/mono.ts.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "SA TV",
+                "logo": "https://i.postimg.cc/Ss8dZ7pz/SA-TV.jpg",
+                "url": "https://tvsen6.aynaott.com/satv/tracks-v1a1/mono.ts.m3u8",
+                "category": "Bangladesh"
+            },
+            {
+                "name": "Somoy TV",
+                "logo": "https://i.postimg.cc/hvcWR1Yz/Somoy-TV.jpg",
+                "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/somoyt000011226615544544.stream/playlist.m3u8",
+                "category": "Bangladesh"
+            }
+        ],
+        "indian_bangla": [
+            {
+                "name": "Star Jalsha HD",
+                "logo": "https://i.postimg.cc/V6q8yDDy/Star-Jalsha-HD.jpg",
+                "url": "http://starshare.st/live/Jahid2025/0470070309/98883.ts",
+                "category": "Indian Bangla"
+            },
+            {
+                "name": "Zee Bangla HD",
+                "logo": "https://i.postimg.cc/QC6LfZkP/Zee-Bangla.jpg",
+                "url": "https://live.drmlive-02.workers.dev/zee/0-9-zeebangla.m3u8",
+                "category": "Indian Bangla"
+            },
+            {
+                "name": "Colors Bangla HD",
+                "logo": "https://i.postimg.cc/LsyGKzFC/Colors-Bangla-HD.jpg",
+                "url": "https://live20.bozztv.com/giatvplayout7/giatv-209627/index.m3u8",
+                "category": "Indian Bangla"
+            },
+            {
+                "name": "Zee Bangla Cinema",
+                "logo": "https://i.postimg.cc/DZkPVJfM/Zee-Bangla-Cinema.jpg",
+                "url": "https://live.drmlive-02.workers.dev/zee/0-9-zeebanglacinema.m3u8",
+                "category": "Indian Bangla"
+            },
+            {
+                "name": "ABP Ananda",
+                "logo": "https://i.postimg.cc/662vVv5x/ABP-Ananda.jpg",
+                "url": "https://abplivetv.akamaized.net/hls/live/2043012/ananda/master.m3u8",
+                "category": "Indian Bangla"
+            },
+            {
+                "name": "Sony Aath",
+                "logo": "https://i.postimg.cc/3wPnKf19/Sony-Aath.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8",
+                "category": "Indian Bangla"
+            },
+            {
+                "name": "TV9 Bangla",
+                "logo": "https://i.postimg.cc/tTNPLBMs/24-Ghanta.jpg",
+                "url": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+                "category": "Indian Bangla"
+            }
+        ],
+        "music": [
+            {
+                "name": "9X Jalwa",
+                "logo": "https://i.postimg.cc/2S9YWq3f/9X-Jalwa.jpg",
+                "url": "https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/70fca4d1-156e-4c03-baa4-9a4b602e33d5/0.m3u8",
+                "category": "Music"
+            },
+            {
+                "name": "9X Jhakaas",
+                "logo": "https://i.postimg.cc/154N6F39/9-X-Jhakaas.jpg",
+                "url": "https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/ec26ed6c-3d9d-47d3-ac70-d23e781adbdf/0.m3u8",
+                "category": "Music"
+            },
+            {
+                "name": "9X Music",
+                "logo": "https://i.postimg.cc/RZJmcSt6/9XM.jpg",
+                "url": "https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/23886666-8fc5-470f-aab1-bd637ed607b1/3.m3u8",
+                "category": "Music"
+            },
+            {
+                "name": "B4U Music",
+                "logo": "https://i.postimg.cc/MGP3pRsh/Balle-Balle.jpg",
+                "url": "https://tvsen6.aynaott.com/b4umusic/index.m3u8",
+                "category": "Music"
+            },
+            {
+                "name": "Sangeet Bangla",
+                "logo": "https://i.postimg.cc/pLG976s5/Sangeet-Bangla.jpg",
+                "url": "https://tvsen6.aynaott.com/SangeetBangla/index.m3u8",
+                "category": "Music"
+            },
+            {
+                "name": "YRF Music",
+                "logo": "https://i.postimg.cc/RhgbbqFx/Star-Gold.jpg",
+                "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8",
+                "category": "Music"
+            }
+        ],
+        "kids": [
+            {
+                "name": "Duronto TV",
+                "logo": "https://i.postimg.cc/zBCLNtGZ/Duronto.jpg",
+                "url": "https://tvsen6.aynaott.com/durontotv/index.m3u8",
+                "category": "Kids"
+            },
+            {
+                "name": "Cartoon Network",
+                "logo": "https://i.postimg.cc/d3j5T2F8/Cartoon-Network.jpg",
+                "url": "https://live20.bozztv.com/giatvplayout7/giatv-209624/index.m3u8",
+                "category": "Kids"
+            },
+            {
+                "name": "Disney Junior",
+                "logo": "https://i.postimg.cc/zBCLNtGZ/Duronto.jpg",
+                "url": "https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8",
+                "category": "Kids"
+            },
+            {
+                "name": "Nick",
+                "logo": "https://i.postimg.cc/DZ4NwNWZ/Nick.jpg",
+                "url": "http://fl1.moveonjoy.com/NICKELODEON/index.m3u8",
+                "category": "Kids"
+            },
+            {
+                "name": "Sony YAY",
+                "logo": "https://i.postimg.cc/DZ4NwNWZ/Nick.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8",
+                "category": "Kids"
+            },
+            {
+                "name": "Discovery Kids",
+                "logo": "https://i.postimg.cc/gjZzG3WD/Fight-Network.jpg",
+                "url": "https://live20.bozztv.com/giatvplayout7/giatv-209633/index.m3u8",
+                "category": "Kids"
+            }
+        ],
+        "news": [
+            {
+                "name": "Aaj Tak HD",
+                "logo": "https://i.imgur.com/e3cYtrb.jpg",
+                "url": "https://feeds.intoday.in/aajtak/api/aajtakhd/master.m3u8",
+                "category": "News"
+            },
+            {
+                "name": "Aljazeera",
+                "logo": "https://i.imgur.com/e3cYtrb.jpg",
+                "url": "https://live-hls-v3-aje.getaj.net/AJE-V3/index.m3u8",
+                "category": "News"
+            },
+            {
+                "name": "CNN",
+                "logo": "https://i.postimg.cc/vH3MKVPY/CNN.jpg",
+                "url": "https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8",
+                "category": "News"
+            },
+            {
+                "name": "India Today",
+                "logo": "https://i.imgur.com/kcMUGOE.jpg",
+                "url": "https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8",
+                "category": "News"
+            },
+            {
+                "name": "NDTV English",
+                "logo": "https://i.imgur.com/ldXaLJK.png",
+                "url": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8",
+                "category": "News"
+            },
+            {
+                "name": "NDTV Hindi",
+                "logo": "https://i.imgur.com/ldXaLJK.png",
+                "url": "https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8",
+                "category": "News"
+            }
+        ],
+        "infotainment": [
+            {
+                "name": "BBC Earth",
+                "logo": "https://i.postimg.cc/Y05S4Fjz/Animal-Planet.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2011907/SonyBBCEarthHD/master.m3u8",
+                "category": "Infotainment"
+            },
+            {
+                "name": "National Geographic",
+                "logo": "https://i.postimg.cc/SKhYrRFf/National-Geographic.jpg",
+                "url": "http://89.187.179.14/Nat_Geo_Hin/index.mpd?token=test",
+                "category": "Infotainment"
+            },
+            {
+                "name": "Wild Earth",
+                "logo": "https://i.postimg.cc/HxDhtfTy/Wild-Earth.jpg",
+                "url": "https://wildearth-plex.amagi.tv/master.m3u8",
+                "category": "Infotainment"
+            }
+        ],
+        "movies": [
+            {
+                "name": "Sony Max HD",
+                "logo": "https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8",
+                "category": "Movies"
+            },
+            {
+                "name": "Sony Pix HD",
+                "logo": "https://i.postimg.cc/02CNFVwv/Star-Movies-HD.jpg",
+                "url": "https://tataplay.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8",
+                "category": "Movies"
+            },
+            {
+                "name": "Bollywood HD",
+                "logo": "https://i.postimg.cc/rmBYB7GQ/Bhojpuri-Cinema.jpg",
+                "url": "https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/43e99595-3ab3-4f82-a828-0d32dc308c98/0.m3u8",
+                "category": "Movies"
+            }
+        ],
+        "documentary": [
+            {
+                "name": "Discovery Channel",
+                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9SbDRQ6M7L5u0kFVWLuJJNyosMqwMfiRLhg&s",
+                "url": "https://tvsen6.aynaott.com/discovery_hd_bangla/index.m3u8 ",
+                "category": "Documentary"
+            }
+        ]
+    },
+    "stats": {
+        "total_channels": 120,
+        "categories": {
+            "Sports": 13,
+            "Bangladesh": 22,
+            "Indian Bangla": 7,
+            "Music": 6,
+            "Kids": 6,
+            "News": 6,
+            "Infotainment": 3,
+            "Movies": 3
+        }
+    },
+    "metadata": {
+        "format": "M3U8",
+        "source": "Bangladesh TV Channels Collection",
+        "created": "2025-01-05",
+        "description": "Comprehensive collection of Bangladeshi and international TV channels with streaming URLs"
+    }
+}
