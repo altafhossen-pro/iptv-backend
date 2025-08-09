@@ -1095,4 +1095,48 @@ exports.manualPayment = async (req, res) => {
     }
 }
 
+exports.getAllManualPayments = async (req, res) => {
+    try {
+        const { page = 1, limit = 10, status } = req.query;
+        const skip = (page - 1) * limit;
+        const filter = {};
+        if (status) filter.payment_status = status;
+
+
+        const manualPayments = await ManualPayment.find(filter)
+            .populate('user_id', 'name email sid')
+            .sort({ created_at: -1 })
+            .limit(parseInt(limit))
+            .skip(skip);
+        const totalManualPayments = await ManualPayment.countDocuments();
+        return sendResponse({
+            res,
+            statusCode: 200,
+            success: true,
+            message: 'Manual payments retrieved successfully',
+            data: {
+                manualPayments,
+                pagination: {
+                    current_page: parseInt(page),
+                    per_page: parseInt(limit),
+                    totalPages: Math.ceil(totalManualPayments / limit),
+                    total_records: totalManualPayments,
+                    hasNext: page * limit < totalManualPayments,
+                    hasPrev: page > 1
+                }
+            }
+        });
+
+    } catch (error) {
+        console.error('Get all manual payments error:', error);
+        return sendResponse({
+            res,
+            statusCode: 500,
+            success: false,
+            message: 'Server error while retrieving manual payments'
+        });
+    }
+
+}
+
 module.exports = exports;
