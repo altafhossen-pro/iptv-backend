@@ -41,21 +41,6 @@ const paymentSchema = new mongoose.Schema({
         enum: ['pending', 'completed', 'failed', 'refunded', 'cancelled'],
         default: 'pending'
     },
-    subscription_duration: {
-        type: Number,
-        required: [true, 'Subscription duration is required'],
-        enum: [30, 90, 365] // days
-    },
-    subscription_type: {
-        type: String,
-        enum: ['basic', 'premium', 'vip'],
-        required: [true, 'Subscription type is required']
-    },
-    discount_amount: {
-        type: Number,
-        default: 0,
-        min: [0, 'Discount amount cannot be negative']
-    },
     coupon_code: {
         type: String,
         default: null,

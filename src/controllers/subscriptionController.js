@@ -1139,4 +1139,104 @@ exports.getAllManualPayments = async (req, res) => {
 
 }
 
+exports.approveManualPayment = async (req, res) => {
+    try {
+        const { paymentId, months } = req.body;
+        if (!paymentId || !paymentId.trim()) {
+            return sendResponse({
+                res,
+                statusCode: 400,
+                success: false,
+                message: 'Payment ID is required'
+            });
+        }
+        if (!months || isNaN(months) || months <= 0) {
+            return sendResponse({
+                res,
+                statusCode: 400,
+                success: false,
+                message: 'Invalid months value'
+            });
+        }
+
+
+
+        const manualPayment = await ManualPayment.findById(paymentId);
+        if (!manualPayment) {
+            return sendResponse({
+                res,
+                statusCode: 404,
+                success: false,
+                message: 'Manual payment not found'
+            });
+        }
+        if (manualPayment.payment_status !== 'pending') {
+            return sendResponse({
+                res,
+                statusCode: 400,
+                success: false,
+                message: 'Manual payment is not in pending status'
+            });
+        }
+
+        const userSubscription = await Subscription.findOne({ user_id: manualPayment.user_id, status: 'active' });
+
+        // Update payment status to completed
+        manualPayment.payment_status = 'completed';
+        await manualPayment.save();
+
+        const newPayment = await Payment.create({
+            user_id: manualPayment.user_id,
+            subscription_id: userSubscription._id,
+            transaction_id: manualPayment.transaction_id,
+            amount: manualPayment.amount,
+            payment_method: manualPayment.payment_method,
+            payment_status: 'completed',
+        });
+        let newEndDate;
+        const currentDate = new Date();
+
+        if (userSubscription.end_date && userSubscription.end_date > currentDate) {
+            // If subscription has a valid end_date in future, extend from that date
+            newEndDate = new Date(userSubscription.end_date);
+        } else {
+            // If end_date is null or in past, start from today
+            newEndDate = new Date(currentDate);
+        }
+
+        // Add the specified months
+        newEndDate.setMonth(newEndDate.getMonth() + parseInt(months));
+
+        // Update subscription
+        userSubscription.end_date = newEndDate;
+        userSubscription.subscription_type = 'premium';
+        userSubscription.status = 'active';
+        await userSubscription.save();
+
+        return sendResponse({
+            res,
+            statusCode: 200,
+            success: true,
+            message: 'Manual payment approved successfully',
+            data: {
+                payment: manualPayment,
+                subscription: {
+                    id: userSubscription._id,
+                    end_date: userSubscription.end_date,
+                    subscription_type: userSubscription.subscription_type,
+                    status: userSubscription.status
+                }
+            }
+        });
+    } catch (error) {
+        console.error('Approve manual payment error:', error);
+        return sendResponse({
+            res,
+            statusCode: 500,
+            success: false,
+            message: 'Server error while approving manual payment'
+        });
+    }
+}
+
 module.exports = exports;

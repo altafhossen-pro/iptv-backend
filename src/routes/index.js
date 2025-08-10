@@ -8,6 +8,7 @@ const subscriptionRoutes = require('./subscription.route');
 const paymentRoutes = require('./payment.route');
 const watchHistoryRoutes = require('./watchHistory.route');
 const otpRoutes = require('./otp.route');
+const adminRoutes = require('./admin.route');
 
 // API Routes
 router.use('/user', userRoutes);
@@ -17,6 +18,7 @@ router.use('/subscription', subscriptionRoutes);
 router.use('/payment', paymentRoutes);
 router.use('/watch-history', watchHistoryRoutes);
 router.use('/otp', otpRoutes);
+router.use('/admin', adminRoutes)
 
 // Health check route
 router.get('/health', (req, res) => {

@@ -12,6 +12,7 @@ router.post('/renew', verifyToken, subscriptionController.renewSubscription);
 
 router.post('/manual-payment', verifyToken, subscriptionController.manualPayment);
 router.get('/admin/all-manual-payments', verifyToken, subscriptionController.getAllManualPayments);
+router.patch('/admin/approve-manual-payment', verifyToken, subscriptionController.approveManualPayment);
 
 // Admin routes (protected + admin access required)
 router.get('/all', verifyToken, subscriptionController.getAllSubscriptions);
