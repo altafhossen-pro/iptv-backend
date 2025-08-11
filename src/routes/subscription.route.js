@@ -14,6 +14,9 @@ router.post('/manual-payment', verifyToken, subscriptionController.manualPayment
 router.get('/admin/all-manual-payments', verifyToken, subscriptionController.getAllManualPayments);
 router.patch('/admin/approve-manual-payment', verifyToken, subscriptionController.approveManualPayment);
 
+// Promotional user creation route
+router.post('/promotional-user', subscriptionController.createPromotionalUser);
+
 // Admin routes (protected + admin access required)
 router.get('/all', verifyToken, subscriptionController.getAllSubscriptions);
 router.get('/:subscriptionId', verifyToken, subscriptionController.getSubscriptionById);

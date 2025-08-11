@@ -1239,4 +1239,119 @@ exports.approveManualPayment = async (req, res) => {
     }
 }
 
+exports.createPromotionalUser = async (req, res) => {
+    try {
+        console.log(req.body);
+        const { email, password, name, months = 1 } = req.body;
+
+        // Validate required fields
+        if (!email || !password || !name) {
+            return sendResponse({
+                res,
+                statusCode: 400,
+                success: false,
+                message: 'Email, password, and name are required'
+            });
+        }
+
+        if (!months || isNaN(months) || months <= 0 || months > 12) {
+            return sendResponse({
+                res,
+                statusCode: 400,
+                success: false,
+                message: 'Months must be a number between 1 and 12'
+            });
+        }
+
+        // Check if user already exists
+        const existingUser = await User.findOne({ email: email.toLowerCase() });
+        if (existingUser) {
+            return sendResponse({
+                res,
+                statusCode: 400,
+                success: false,
+                message: 'User with this email already exists'
+            });
+        }
+
+        // Create new user
+        const user = new User({
+            name: name.trim(),
+            email: email.toLowerCase(),
+            password: password,
+            status: 'active'
+        });
+
+        await user.save();
+
+        // Calculate subscription dates
+        const startDate = new Date();
+        const endDate = new Date();
+        endDate.setMonth(endDate.getMonth() + parseInt(months));
+
+        // Create subscription
+        const subscription = new Subscription({
+            user_id: user._id,
+            subscription_type: 'premium',
+            start_date: startDate,
+            end_date: endDate,
+            status: 'active',
+            auto_renewal: false
+        });
+
+        await subscription.save();
+
+        // Create payment record for tracking
+        const payment = new Payment({
+            user_id: user._id,
+            subscription_id: subscription._id,
+            amount: 0,
+            discount_amount: 0,
+            currency: 'BDT',
+            payment_method: 'promotional',
+            subscription_duration: months * 30,
+            subscription_type: 'premium',
+            payment_status: 'completed',
+            transaction_id: `PROMO_${Date.now()}_${user._id}`
+        });
+
+        await payment.save();
+
+        // Populate user data (excluding password)
+        const userData = user.toObject();
+        delete userData.password;
+
+        return sendResponse({
+            res,
+            statusCode: 201,
+            success: true,
+            message: 'Promotional user created successfully',
+            data: {
+                user: userData,
+                subscription: {
+                    ...subscription.toJSON(),
+                    isActive: subscription.isActive,
+                    daysRemaining: subscription.daysRemaining,
+                    hasPremiumAccess: subscription.hasPremiumAccess()
+                },
+                payment: {
+                    transaction_id: payment.transaction_id,
+                    amount: payment.amount,
+                    subscription_type: payment.subscription_type,
+                    duration: payment.subscription_duration
+                }
+            }
+        });
+
+    } catch (error) {
+        console.error('Create promotional user error:', error);
+        return sendResponse({
+            res,
+            statusCode: 500,
+            success: false,
+            message: 'Server error while creating promotional user'
+        });
+    }
+};
+
 module.exports = exports;
